@@ -13,5 +13,6 @@ module.exports = {
       '@/static': path.resolve(__dirname, 'src/static'),
       '@/store': path.resolve(__dirname, 'src/store')
     }
-  }
+  },
+  transpileDependencies: ['@dcloudio/uni-ui']
 }

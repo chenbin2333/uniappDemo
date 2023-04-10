@@ -2,8 +2,8 @@
     "name": "清远供水",
     "appid": "__UNI__000",
     "description": "",
-    "versionName": "2023.04.04",
-    "versionCode": "20230404",
+    "versionName": "2023.04.10",
+    "versionCode": "20230410",
     "transformPx": false,
     "networkTimeout": {
         "uploadFile": 300000
@@ -32,8 +32,8 @@
             "isTestEnv": "false",
             "areaAppName": "zm_app",
             "areaConfigName": "zm_app",
-            "appBuildTime": "2023/4/4 13:50:46",
-            "appBuildHost": "DESKTOP-P35K801",
+            "appBuildTime": "2023/4/10 19:37:05",
+            "appBuildHost": "DESKTOP-HTG7UTJ",
             "enableStat": true
         },
         "sdkConfigs": {
