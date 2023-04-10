@@ -1,0 +1,37 @@
+{
+	"pages": [
+		{
+			"path": "pages/testpicker",
+			"style": {
+				"navigationBarTitleText": "更多设置",
+				"enablePullDownRefresh": false
+			}
+		},
+		{
+			"path": "pages/chooseTag",
+			"style": {
+				"navigationBarTitleText": "我的标签",
+				"enablePullDownRefresh": false
+			}
+		},
+		{
+			"path": "pages/index",
+			"style": {
+				"navigationBarTitleText": "我的标签"
+			}
+		}
+	],
+	"globalStyle": {
+		"rpxCalcMaxDeviceWidth": 750,
+		"rpxCalcBaseDeviceWidth": 375,
+		"rpxCalcIncludeWidth": 750,
+		"pageOrientation": "portrait",
+		"navigationBarTitleText": "create",
+		"navigationBarTextStyle": "white",
+		"navigationBarBackgroundColor": "#2577db",
+		"backgroundColor": "#f6f6f6",
+		"backgroundColorTop": "#F4F5F6",
+		"backgroundColorBottom": "#F4F5F6",
+		"nReachBottomDistance": 50
+	}
+}

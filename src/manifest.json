@@ -1,0 +1,66 @@
+{
+    "name": "清远供水",
+    "appid": "__UNI__000",
+    "description": "",
+    "versionName": "2023.04.04",
+    "versionCode": "20230404",
+    "transformPx": false,
+    "networkTimeout": {
+        "uploadFile": 300000
+    },
+    "mp-weixin": {
+        "appid": "wx619691b833c8ac4e",
+        "setting": {
+            "urlCheck": false,
+            "minified": true,
+            "postcss": false
+        },
+        "usingComponents": true,
+        "requiredPrivateInfos": [
+            "chooseLocation",
+            "getLocation"
+        ],
+        "permission": {
+            "scope.userLocation": {
+                "desc": "您的定位信息将用于位置导航"
+            }
+        }
+    },
+    "h5": {
+        "router": {
+            "base": "/zm_app/h5",
+            "isTestEnv": "false",
+            "areaAppName": "zm_app",
+            "areaConfigName": "zm_app",
+            "appBuildTime": "2023/4/4 13:50:46",
+            "appBuildHost": "DESKTOP-P35K801",
+            "enableStat": true
+        },
+        "sdkConfigs": {
+            "maps": {
+                "qqmap": {
+                    "key": "LPZBZ-PS3LX-NXD4Z-77MYJ-65POO-I2BI4"
+                }
+            }
+        },
+        "devServer": {
+            "port": 8000,
+            "disableHostCheck": true,
+            "https": false,
+            "proxy": {
+                "/api": {
+                    "target": "http://192.168.1.235:8084",
+                    "changeOrigin": true,
+                    "secure": false,
+                    "pathRewrite": {
+                        "^/api": ""
+                    }
+                }
+            }
+        },
+        "uniStatistics": {
+            "enable": true
+        }
+    },
+    "vueVersion": "2"
+}

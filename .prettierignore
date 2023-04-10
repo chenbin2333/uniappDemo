@@ -1,0 +1,10 @@
+/src/static/
+/src/.babelr
+*.md
+*.scss
+/src/common
+/src/components/zmm-watermark/zmm-watermark.vue
+*.ttf
+*.wxs
+*.xml
+pages.json
