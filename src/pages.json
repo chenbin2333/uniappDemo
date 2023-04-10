@@ -1,10 +1,9 @@
 {
 	"pages": [
 		{
-			"path": "pages/testpicker",
+			"path": "pages/index",
 			"style": {
-				"navigationBarTitleText": "更多设置",
-				"enablePullDownRefresh": false
+				"navigationBarTitleText": "主页"
 			}
 		},
 		{
@@ -15,9 +14,24 @@
 			}
 		},
 		{
-			"path": "pages/index",
+			"path": "pages/testpicker",
 			"style": {
-				"navigationBarTitleText": "我的标签"
+				"navigationBarTitleText": "更多设置",
+				"enablePullDownRefresh": false
+			}
+		},
+		{
+			"path": "pages/managerTag",
+			"style": {
+				"navigationBarTitleText": "管理标签",
+				"enablePullDownRefresh": false
+			}
+		},
+		{
+			"path": "pages/tianbaozhouqi",
+			"style": {
+				"navigationBarTitleText": "",
+				"enablePullDownRefresh": false
 			}
 		}
 	],

@@ -20,10 +20,10 @@
             :class='[item.choosed ? "choosed" : ""]'>{{item.name}}</view>
     </view>
     <view class='btn'>
-      <button :style="{ display: 'inline-block', width: '165px', marginRight: '20px' }" @click="cancel">
+      <button @click="cancel">
         取消
       </button>
-      <button :style="{ display: 'inline-block', width: '165px' }" type="primary" @click="queding">确定</button>
+      <button type="primary" @click="queding">确定</button>
     </view>
 
     <!-- 普通弹窗 -->
@@ -69,9 +69,8 @@ export default {
   },
   methods: {
     tomManagerTags() {
-      console.log(1);
       uni.navigateTo({
-        url: '/pages/index'
+        url: '/pages/managerTag'
       });
     },
     clickZdyTag(type) {
@@ -84,6 +83,13 @@ export default {
       this.$refs.popup.close()
     },
     queding() {
+      if (this.tagname === '') {
+        uni.showToast({
+          title: "请输入标签名！！",
+          icon: "none"
+        })
+        return;
+      }
       this.tags.push({
         name: this.tagname,
         choosed: false
@@ -97,7 +103,6 @@ export default {
 
 <style scoped>
 .header {
-  width: 100vw;
   padding: 10px;
   background-color: #ffffff;
   box-shadow: 0px 0px 5px 0px rgba(222, 222, 222, 0.5);
@@ -105,7 +110,7 @@ export default {
 }
 .header-tag {
   display: flex;
-  /*justify-content: space-between;*/
+  justify-content: space-between;
   font-size: 18px;
   font-weight: bold;
   font-stretch: normal;
@@ -116,7 +121,6 @@ export default {
   font-size: 16px;
   font-weight: normal;
   color: #3077eb;
-  margin-left: 200px;
 }
 
 .header-tips {
@@ -168,8 +172,11 @@ export default {
 }
 
 .btn {
-  padding: 10px;
+  display: flex;
   margin-top: 50px;
+}
+.btn button {
+  width: 162px;
 }
 
 .pop-tag {

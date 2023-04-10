@@ -23,6 +23,7 @@
     "dayjs": "^1.11.7",
     "flyio": "^0.6.2",
     "regenerator-runtime": "^0.12.1",
+    "sortablejs": "^1.15.0",
     "throttle-debounce": "^5.0.0",
     "uni-ui": "^1.0.0",
     "vconsole": "^3.14.6",
